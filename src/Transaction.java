@@ -30,7 +30,7 @@ public class Transaction
 	 * @param input				The input file reader specifying the contents of this transaction.
 	 *							If this parameter is null, the transaction is performed randomly.
 	 */
-  	public Transaction(int transactionId, ServerImpl owner, TransactionFileReader input) {
+	public Transaction(int transactionId, ServerImpl owner, TransactionFileReader input) {
 		this.transactionId = transactionId;
 		this.owner = owner;
 		this.input = input;
@@ -53,7 +53,7 @@ public class Transaction
 	public boolean runTransaction() {
 		abortTransaction = false;
 		lockedResources = new ArrayList();
-		owner.println("Starting transaction "+transactionId+".", transactionId); 
+		owner.println("Starting transaction "+transactionId+".", transactionId);
 
 		// Figure out how many resource accesses the transaction consists of.
 		int nofAccesses = Globals.random(Globals.MIN_NOF_ACCESSES_PER_TRANSACTION, Globals.MAX_NOF_ACCESSES_PER_TRANSACTION);
@@ -122,7 +122,7 @@ public class Transaction
 			return owner.getRandomResource(lockedResources);
 		else {
 			// Read the next resource to be accessed from the input file
-			// Expected format: ACCESS SERVER 1 RESOURCE 5 
+			// Expected format: ACCESS SERVER 1 RESOURCE 5
 			String line = input.readLine();
 			if(line == null || !line.startsWith("ACCESS SERVER "))
 				owner.unexpectedInput();
@@ -178,7 +178,7 @@ public class Transaction
 	/**
 	 * Aborts this transaction, releasing all the locks held by it.
 	 */
-	private synchronized void abort() {
+	public synchronized void abort() {
 		owner.println("Aborting transaction "+transactionId+".", transactionId);
 		releaseLocks();
 		owner.println("Transaction "+transactionId+" aborted.", transactionId);

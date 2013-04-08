@@ -36,9 +36,19 @@ public class Resource
 		else {
 			// Wait for the lock
 			try	{
-				server.deadlockStrategy.onLock();
-				wait();
-				server.deadlockStrategy.onNotify();
+
+				if (!Globals.PROBING_ENABLED) {
+					Thread.sleep(Globals.TIMEOUT_INTERVAL);
+					if (lockOwner != null) {
+						server.println("Aborting");
+						server.abortTransaction();
+					} else {
+						server.println("Not aborting");
+					}
+				}
+
+				//wait();
+
 			} catch (InterruptedException ie) {
 				return false;
 			}

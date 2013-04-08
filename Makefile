@@ -16,7 +16,7 @@ rmic: all
 	$(RMIC) -classpath $(BIN) ServerImpl -d $(BIN)
 	$(RMIC) -classpath $(BIN) RegistryProxyImpl -d $(BIN)
 
-tests: #stop
+tests: stop
 	./run_all_tests.sh
 
 stop:

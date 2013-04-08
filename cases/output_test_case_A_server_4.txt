@@ -1,5 +1,24 @@
 ==================================================================
 1: Test case A started.
-1300: Server 4 started.
-18919: Server 4 was notified of the departure of server 1 by server 1.
-20900: Server 4 was notified of the departure of server 2 by server 2.
+1244: Server 4 started.
+41096: Server 4 started its transactions.
+41171: Transaction 4000 arrived.
+41172: TRANS 4000: Starting transaction 4000.
+41174: TRANS 4000: Trying to claim lock of resource 9 at server 1
+41177: TRANS 4000: Lock claimed. Processing...
+45179: TRANS 4000: Committing transaction 4000.
+45182: TRANS 4000: Failed to unlock resource 9 at server 1
+45183: TRANS 4000: Transaction 4000 committed.
+45184: Transaction 4000 ended.
+45264: Transaction 4001 arrived.
+45265: TRANS 4001: Starting transaction 4001.
+45265: TRANS 4001: Trying to claim lock of resource 1 at server 1
+45266: TRANS 4001: Lock claimed. Processing...
+45368: TRANS 4001: Trying to claim lock of resource 1 at server 2
+45369: TRANS 4001: Lock claimed. Processing...
+46371: TRANS 4001: Committing transaction 4001.
+46376: TRANS 4001: Unlocked resource 1 at server 2
+46378: TRANS 4001: Unlocked resource 1 at server 1
+46380: TRANS 4001: Transaction 4001 committed.
+46381: Transaction 4001 ended.
+46382: End of input file reached, no more transactions will be started.

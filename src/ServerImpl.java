@@ -433,7 +433,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server
 	}
 
 	public void abortTransaction() {
-
+		this.activeTransaction.abort();
 	}
 
 	/**

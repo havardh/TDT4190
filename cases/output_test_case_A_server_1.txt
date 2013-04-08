@@ -1,7 +1,30 @@
 ==================================================================
-11: Test case A started.
-57: Server 1 was notified of the arrival of server 2
-132: Server 1 was notified of the arrival of server 3
-224: Server 1 was notified of the arrival of server 4
-1135: Server 1 started.
-19143: Contact with server 1 was lost.
+1: Test case A started.
+29: Server 1 was notified of the arrival of server 2
+95: Server 1 was notified of the arrival of server 3
+192: Server 1 was notified of the arrival of server 4
+1264: Server 1 started.
+41301: Server 1 started its transactions.
+41390: Transaction 1000 arrived.
+41392: TRANS 1000: Starting transaction 1000.
+41398: TRANS 1000: Trying to claim lock of resource 0 at server 2
+41401: TRANS 1000: Lock claimed. Processing...
+41902: TRANS 1000: Trying to claim lock of resource 9 at server 1
+41905: TRANS 1000: Lock claimed. Processing...
+41916: TRANS 1000: Committing transaction 1000.
+41918: TRANS 1000: Unlocked resource 9 at server 1
+41927: TRANS 1000: Unlocked resource 0 at server 2
+41929: TRANS 1000: Transaction 1000 committed.
+41930: Transaction 1000 ended.
+41984: Transaction 1001 arrived.
+41985: TRANS 1001: Starting transaction 1001.
+41985: TRANS 1001: Trying to claim lock of resource 1 at server 2
+41987: TRANS 1001: Lock claimed. Processing...
+42088: TRANS 1001: Trying to claim lock of resource 1 at server 3
+42091: TRANS 1001: Lock claimed. Processing...
+43093: TRANS 1001: Committing transaction 1001.
+43103: TRANS 1001: Unlocked resource 1 at server 3
+43133: TRANS 1001: Unlocked resource 1 at server 2
+43139: TRANS 1001: Transaction 1001 committed.
+43140: Transaction 1001 ended.
+43141: End of input file reached, no more transactions will be started.

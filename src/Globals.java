@@ -7,9 +7,9 @@ public class Globals
 	// The four "constants" below may be changed by data in the input file.
 
 	/** The number of milliseconds to wait for a lock before a timeout is declared */
-	public static long TIMEOUT_INTERVAL = 0; // Timeouts disabled
+	public static long TIMEOUT_INTERVAL = 1000; // Timeouts disabled
 	/** Whether or not to use edge chasing to detect deadlocks */
-	public static boolean PROBING_ENABLED = true;
+	public static boolean PROBING_ENABLED = false;
 	/** The number of local resources on each server */
 	public static int NOF_RESOURCES_PER_SERVER = 10;
 	/** The file to write output to (a suffix describing server ID will be added) */
