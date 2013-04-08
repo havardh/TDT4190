@@ -1,0 +1,6 @@
+==================================================================
+4: Test case A started.
+13: Server 3 was notified of the arrival of server 4
+1285: Server 3 started.
+18998: Server 3 was notified of the departure of server 1 by server 1.
+20979: Server 3 was notified of the departure of server 2 by server 2.

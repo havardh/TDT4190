@@ -1,0 +1,5 @@
+==================================================================
+1: Test case A started.
+1300: Server 4 started.
+18919: Server 4 was notified of the departure of server 1 by server 1.
+20900: Server 4 was notified of the departure of server 2 by server 2.

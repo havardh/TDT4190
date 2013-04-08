@@ -1,0 +1,7 @@
+==================================================================
+1: Test case A started.
+52: Server 2 was notified of the arrival of server 3
+126: Server 2 was notified of the arrival of server 4
+1275: Server 2 started.
+19090: Server 2 was notified of the departure of server 1 by server 1.
+21067: Contact with server 2 was lost.

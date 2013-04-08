@@ -1,0 +1,34 @@
+Sat Apr  6 14:50:10 CEST 2013
+---------
+output_test_case_A_server_1.txt
+==================================================================
+11: Test case A started.
+57: Server 1 was notified of the arrival of server 2
+132: Server 1 was notified of the arrival of server 3
+224: Server 1 was notified of the arrival of server 4
+1135: Server 1 started.
+19143: Contact with server 1 was lost.
+---------
+output_test_case_A_server_2.txt
+==================================================================
+1: Test case A started.
+52: Server 2 was notified of the arrival of server 3
+126: Server 2 was notified of the arrival of server 4
+1275: Server 2 started.
+19090: Server 2 was notified of the departure of server 1 by server 1.
+21067: Contact with server 2 was lost.
+---------
+output_test_case_A_server_3.txt
+==================================================================
+4: Test case A started.
+13: Server 3 was notified of the arrival of server 4
+1285: Server 3 started.
+18998: Server 3 was notified of the departure of server 1 by server 1.
+20979: Server 3 was notified of the departure of server 2 by server 2.
+---------
+output_test_case_A_server_4.txt
+==================================================================
+1: Test case A started.
+1300: Server 4 started.
+18919: Server 4 was notified of the departure of server 1 by server 1.
+20900: Server 4 was notified of the departure of server 2 by server 2.

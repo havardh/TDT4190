@@ -1,0 +1,7 @@
+==================================================================
+11: Test case A started.
+57: Server 1 was notified of the arrival of server 2
+132: Server 1 was notified of the arrival of server 3
+224: Server 1 was notified of the arrival of server 4
+1135: Server 1 started.
+19143: Contact with server 1 was lost.
